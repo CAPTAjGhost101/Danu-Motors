@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+   
+   
+   
+   .container{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+   
+   .box{
+    border-radius: 20px;
+    height: 200px;
+    min-width: 200px;
+    transition: ease transform 0.1s, ease background-color 0.2s, box-shadow 0.3s ease;
+   }
+  
+   .box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+   }
+
+   .red{
+    background-color: rgb(255, 0, 0);
+   }
+   .green{
+    background-color: rgb(0, 255, 0);
+   }.blue{
+    background-color: rgb(0, 255, 255);
+   }.yellow{
+    background-color: rgb(255, 255, 0);
+   }
+    
+   .red:hover{
+    background-color: rgb(225, 0, 0);
+   }
+   .green:hover{
+    background-color: rgb(0, 224, 0);
+   }.blue:hover{
+    background-color: rgb(0, 223, 223);
+   }.yellow:hover{
+    background-color: rgb(232, 232, 0);
+   }
+    
+   h2{
+    text-align: center;
+    position: relative;
+    top: 25%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+   }
+   
+   h1{
+    position: absolute;
+    margin: 30px;
+    font-size: xxx-large;
+    left: 455px;
+   }
+   
+  
+   
+   </style>
+
+
+</head>
+<body>
+    
+    <h1>CHOOSE YOUR POWER</h1>
+    
+    <div class="container">
+     <div class="red box">
+        <h2>FIRE</h2>
+     </div>
+     <div class="green box">
+        <h2>EARTH</h2>
+     </div>
+     <div class="yellow box">
+        <h2>AIR</h2>
+     </div>
+     <div class="blue box">
+        <h2>WATER</h2>
+     </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flexbox > * {
+        min-width: 100px;
+        min-height: 100px;
+        border: solid 1px;
+      }
+      .flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .red-container > * {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .red-container {
+        display: grid;
+        grid-template: 1fr 1fr/1fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div class="red-container" style="background-color: red">
+        <div class="white" style="background-color: white"></div>
+        <div class="black" style="background-color: black"></div>
+        <div class="white" style="background-color: white"></div>
+        <div class="black" style="background-color: black"></div>
+      </div>
+      <div class="orange" style="background-color: orange"></div>
+      <div class="yellow" style="background-color: yellow"></div>
+      <div class="green" style="background-color: rgb(30, 255, 0)"></div>
+      <div class="blue" style="background-color: rgb(0, 238, 255)"></div>
+      <div class="indigo" style="background-color: rgb(136, 0, 255)" ;></div>
+      <div class="violet" style="background-color: rgb(170, 0, 255)" ;></div>
+    </div>
+  </body>
+</html>
